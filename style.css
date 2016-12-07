@@ -1,0 +1,113 @@
+
+body { 
+	font-family:'verdana';
+	background-color:#d3d3d3; 
+}
+
+#transcript{
+	float:left;
+	clear:left;
+	position:relative;
+	width:30%;	
+}
+
+#rightSection{
+	float:left;
+	width:70%;
+}
+
+#mainViewer{
+  position:relative;
+}
+
+video {	
+	width:80%;
+	padding-left: 10%;
+    padding-right: 10%;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+#canvasPlayer{
+	width:80%;
+	height: 100%;
+	position:absolute;
+    left:10%; /*samw with video padding-left*/
+    bottom: 0%;
+}
+
+#playerBar{
+  position:absolute;
+  width:80%;
+  left:10%; /*samw with video padding-left*/
+  bottom:1%; /*change as video width change*/
+  display: none;
+}
+
+#myProgress {
+    position: relative;
+    width: 98%;
+    left:1%;
+    height: 5px;
+    background-color: grey;
+}
+
+#myBar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+}
+
+#canvasPointer{
+	position: absolute;
+	bottom:-25%;
+}
+
+button {
+	width:44px;
+	height:27px;
+	border:none;
+	outline: none; 
+	cursor:pointer;
+	background: transparent;
+	background-repeat: no-repeat;
+}
+
+#play-pause-button{
+	float:left;
+}
+
+#timestamp{
+	float:left;
+	margin-left: 5px;
+	margin-top: 3px;
+	color:grey;
+}
+
+#fullscreen-button{
+	float:right;
+	margin-right: 5px;
+}
+
+.play{background-image: url(uiimage/playerbar/play.png);}
+.pause {background-image: url(uiimage/playerbar/pause.png);}
+.fullscreen{background-image: url(uiimage/playerbar/fullscreen.png);}
+.unfullscreen{background-image: url(uiimage/playerbar/unfullscreen.png);}
+
+#filmstrip{
+
+}
+
+#canvasBall{
+	position:absolute;
+	left:0%;
+	top:0%;
+}
+
+
+
+
+
